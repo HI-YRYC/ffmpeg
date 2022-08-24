@@ -120,7 +120,6 @@ RUN     buildDeps="autoconf \
                     --includedir=/usr/local/include \
                     --libdir=/usr/local/lib \
                     --libexecdir=/usr/local/libexec \
-                    --enable-sections && \
                     --enable-libvpx \
                     --enable-encoder=libvpx_vp8 \
                     --enable-encoder=libvpx_vp9 \
@@ -128,6 +127,7 @@ RUN     buildDeps="autoconf \
                     --enable-decoder=vp9 \
                     --enable-parser=vp8 \
                     --enable-parser=vp9 \
+                    --enable-sections && \
         make all && \
         make install && \
         make install_rdf && \
